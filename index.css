@@ -1,0 +1,210 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("../image/background.jpg");
+    background-size: cover;
+}
+
+/*------ HEADER ------*/
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 25px;
+    height: 80px;
+}
+
+.header a{
+    padding: 0;
+    margin: 0;
+}
+
+.header a img{
+    width: 200px;
+    height: 80px;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+
+/*------ CARROUSEL ------*/
+
+.contenedor-principal{
+	display: flex;
+	align-items: center;
+	position: relative;
+    /* height: 100vh;  */
+}
+.contenedor-principal .flecha-izquierda,  
+.contenedor-principal .flecha-derecha{
+	position: absolute;
+	border: none;
+	background-color: transparent;
+	font-size: 40px;
+	height: 50%;
+	top: calc(50%-15%);
+	line-height: 40px;
+	width: 50px;
+	color: white;
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+}
+
+.contenedor-principal .flecha-izquierda:hover,
+.contenedor-principal .flecha-derecha:hover{
+	background: rgba(0,0,0,.9);
+}
+
+ .contenedor-principal .flecha-izquierda{
+	left: 0;
+}
+
+ .contenedor-principal .flecha-derecha{
+	right: 0;
+}
+
+ .contenedor-carousel{
+	width: 100%;
+    height: 80vh;
+	/* padding: 20px 0; */
+	/*overflow-x: scroll;*/
+	overflow:hidden;
+	scroll-behavior: smooth;
+}
+
+ .contenedor-carousel .carousel{
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+ .contenedor-carousel .carousel .image{
+	min-width: 100%;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+
+ .contenedor-carousel .carousel .image.hover{
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+ .contenedor-carousel .carousel .image img{
+	width: 100%;
+	vertical-align: top;
+	object-fit: cover;
+	height: 100%;
+}
+
+/*------ END HEADER ------*/
+
+/* Characters Section */
+.characters{
+    margin: 0 auto;
+}
+
+.characters_title{
+    text-align: center;
+    margin: 50px 0;
+    font-size: 30px;
+}
+
+#card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.card{
+    border: 2px solid black;
+    width: 25rem;
+    position: relative;
+    padding: 0 10px;
+    border-radius: 15px;
+    background-color: #282727;
+    color: #ddd;
+}
+
+.card .circle{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    top: 0;
+}
+
+.card .name{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.card div{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.card div p, .card div span{
+    font-size: 16px;
+    text-align: left;
+    margin: 0;
+    display: inline-flex;
+}
+
+.card div .title{
+    font-weight: bold;
+}
+
+.card .affiliations{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0px;
+}
+
+.card .affiliations span{
+    text-align: left;
+}
+
+.card .image-container{
+    text-align: center;
+    margin: 30px 0;
+}
+
+.card .image{
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: cover;
+}
+
+/* End Characters Section */
