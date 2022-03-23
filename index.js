@@ -19,7 +19,7 @@ var requestOptions = {
             ${element.name ? `<h2 class="name"> ${element.name}</h2>` : ''}  
             ${element.image ? 
               `<figure class="image-container">
-                <img src="${element.image}" alt="Imagen" class="image"/>
+                <img src="${element.image}" alt="Imagen" class="image" loading="lazy"/>
               </figure>` : ''}
             ${element.height ? 
               `<div>
