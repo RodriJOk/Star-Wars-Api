@@ -48,6 +48,11 @@ body{
 .navbar a:hover{
     color: #c1baba;
 }
+
+.navbar-mobile{
+    display: none;
+}
+
 /*------ CARROUSEL ------*/
 
 .contenedor-principal{
@@ -202,4 +207,23 @@ body{
     height: 150px;
     border-radius: 50%;
     background-image: cover;
+}
+
+@media screen and (max-width: 768px){
+    .header{
+        display: block;
+        text-align: center;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .contenedor-principal{
+        height: 280px;
+    }
+
+    .contenedor-carousel{
+        height: 210px;
+    }
 }
