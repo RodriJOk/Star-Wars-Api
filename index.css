@@ -47,7 +47,7 @@ body{
 
 .navbar a:hover{
     color: #c1baba;
-    }
+}
 /*------ CARROUSEL ------*/
 
 .contenedor-principal{
@@ -118,7 +118,7 @@ body{
 
 .characters_title{
     text-align: center;
-    margin: 50px 0;
+    margin: 60px 0;
     font-size: 30px;
     color: white;
 }
